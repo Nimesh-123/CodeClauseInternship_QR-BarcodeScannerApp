@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.92"
+                android:background="#2196F3"
+                android:gravity="center_vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:theme="@style/ToolbarStyle1">
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:src="@drawable/back" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/toolbar_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/kanit_semibold"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:text="QR Scanner Details"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16ssp" />
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.08"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:elevation="7dp"
+                            app:cardCornerRadius="14dp">
+
+                            <ImageView
+                                android:id="@+id/idIVQrcode"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tvText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:fontFamily="@font/kanit_medium"
+                            android:gravity="center"
+                            android:text="https://yamberry.in/"
+                            android:textColor="#1D3143"
+                            android:textSize="@dimen/_16ssp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/llCopy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/round_conner_sqare_13"
+                                android:padding="@dimen/_5sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="@dimen/_15sdp"
+                                    android:fontFamily="@font/kanit_regular"
+                                    android:gravity="center"
+                                    android:text="Copy"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14ssp" />
+
+                                <!--                                <ImageView-->
+                                <!--                                    android:layout_width="20dp"-->
+                                <!--                                    android:layout_height="20dp"-->
+                                <!--                                    android:layout_gravity="center"-->
+                                <!--                                    android:layout_marginEnd="20dp"-->
+                                <!--                                    android:src="@drawable/copy_icon"/>-->
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llSearch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:background="@drawable/round_conner_sqare_13"
+                                android:padding="@dimen/_5sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="@dimen/_10sdp"
+                                    android:fontFamily="@font/kanit_regular"
+                                    android:gravity="center"
+                                    android:text="Search"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14ssp" />
+
+                                <!--                                <ImageView-->
+                                <!--                                    android:layout_width="20dp"-->
+                                <!--                                    android:layout_height="20dp"-->
+                                <!--                                    android:layout_gravity="center"-->
+                                <!--                                    android:layout_marginEnd="15dp"-->
+                                <!--                                    android:src="@drawable/round_conner_sqare_13"/>-->
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+
+                            <LinearLayout
+                                android:id="@+id/llShare"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="15dp"
+                                android:background="@drawable/round_conner_sqare_13"
+                                android:padding="@dimen/_5sdp">
+
+                                <!--                                <ImageView-->
+                                <!--                                    android:layout_width="@dimen/_20sdp"-->
+                                <!--                                    android:layout_height="@dimen/_20sdp"-->
+                                <!--                                    android:layout_gravity="center"-->
+                                <!--                                    android:src="@drawable/baseline_share_24"/>-->
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="@dimen/_10sdp"
+                                    android:fontFamily="@font/kanit_regular"
+                                    android:gravity="center"
+                                    android:text="Share"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14ssp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llSave"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:background="@drawable/round_conner_sqare_13"
+                                android:padding="@dimen/_5sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="@dimen/_15sdp"
+                                    android:fontFamily="@font/kanit_regular"
+                                    android:gravity="center"
+                                    android:text="Save"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14ssp" />
+
+                                <!--                                <ImageView-->
+                                <!--                                    android:layout_width="20dp"-->
+                                <!--                                    android:layout_height="20dp"-->
+                                <!--                                    android:layout_gravity="center"-->
+                                <!--                                    android:layout_marginEnd="20dp"-->
+                                <!--                                    android:src="@drawable/save_icon"/>-->
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
